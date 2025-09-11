@@ -1,0 +1,17 @@
+:root {
+  --grey-100: #e5ebed;
+  --grey-200: #dbe3e6;
+  --grey-300: #c3d0d5;
+  --grey-400: #335f70;
+  --grey-500: #264653;
+  --grey-600: #1a3038;
+  --grey-700: #182c33;
+  --grey-800: #122126;
+  --grey-900: #0e191d;
+
+  /* Spacing */
+  --space-xs: 0.8rem;
+  --space-sm: 1.2rem;
+  --space-md: 2.4rem;
+  --space-lg: 3.6rem;
+}
