@@ -10,13 +10,16 @@ import { Chip } from "@/components/ui/chip/chip";
 
 interface PageTitleBlockProps {
   block: {
-    image: string;
+    image: {
+      url: string;
+    };
     title: string;
     subtitle: string;
     link?: {
       slug: string;
       title: string;
     };
+    linkText: string;
   };
 }
 
@@ -27,7 +30,9 @@ const PageTitleBlock = ({ block }: PageTitleBlockProps) => {
         <Chip label="Current location - Tewkesbury, UK" variant="tertiary" />
         <h1 className="">{block.title}</h1>
         <p className="">{block.subtitle}</p>
-        {block.link && <ReadMore href={block.link.slug} label="Read more" />}
+        {block.link && (
+          <ReadMore href={block.link.slug} label={block.linkText} />
+        )}
         {block.image && (
           <figure className="">
             <Image
