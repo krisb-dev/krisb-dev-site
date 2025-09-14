@@ -6,7 +6,7 @@ import { Container } from "../layout/container/container";
 
 import logo from "@/assets/logo.svg";
 import Link from "next/link";
-import { Github } from "lucide-react";
+import { Github, SwatchBook } from "lucide-react";
 import clsx from "clsx";
 
 import style from "./header.module.css";
@@ -22,31 +22,36 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header>
+    <header className={style.header}>
       <Container className="flex items-center">
         <div>
-          <Image src={logo} width={100} height={100} alt="KrisB Dev Logo" />
+          <Image src={logo} width={100} height={50} alt="KrisB Dev Logo" />
         </div>
         <nav>
           <ul>
             {navItems.map(({ href, label }) => (
-              <Link
-                key={href}
-                href={href}
-                className={clsx(
-                  style.navLink,
-                  pathname === href && "is-active"
-                )}
-              >
-                {label}
-              </Link>
+              <li>
+                <Link
+                  key={href}
+                  href={href}
+                  className={clsx(
+                    style.navLink,
+                    pathname === href && style.isActive
+                  )}
+                >
+                  {label}
+                </Link>
+              </li>
             ))}
           </ul>
         </nav>
-        <div>
+        <div className={style.actions}>
           <Link href="/" target="blank">
             <Github className="" />
           </Link>
+          <button>
+            <SwatchBook />
+          </button>
         </div>
       </Container>
     </header>

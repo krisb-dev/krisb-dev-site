@@ -3,5 +3,27 @@ html {
 }
 
 body {
+  color: var(--grey-200);
+  font-family: var(--font-source-sans);
   font-size: 1.8rem;
+  background-color: radial-gradient(
+    125% 125% at 50% 90%,
+    #000000 40%,
+    #072607 100%
+  );
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-inter);
+}
+
+/* Links  */
+a {
+  text-decoration: none;
+  transition-duration: 300ms;
 }

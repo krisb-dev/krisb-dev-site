@@ -1,3 +1,64 @@
+/* Header */
+.header {
+  position: fixed;
+  width: 100%;
+  padding: var(--space-sm) 0;
+  background-color: var(--grey-900);
+  border-bottom: solid 1px var(--grey-700);
+  backdrop-filter: blur(50px);
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2.4rem;
+      width: 100%;
+      list-style: none;
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--space-sm);
+    width: 100px;
+
+    a,
+    button {
+      color: var(--grey-100);
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition-duration: 300ms;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+
+    a:hover,
+    button:hover {
+      color: var(--primary);
+    }
+  }
+}
+
 .navLink {
   color: var(--grey-100);
+  font-family: var(--font-inter);
+  font-weight: bold;
+
+  &:hover {
+    color: var(--secondary);
+  }
+}
+
+.isActive {
+  color: var(--primary);
 }

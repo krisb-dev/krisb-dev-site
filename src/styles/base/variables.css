@@ -9,9 +9,23 @@
   --grey-800: #122126;
   --grey-900: #0e191d;
 
+  --primary: #2a9d8f;
+  --secondary: #e76f51;
+  --tertiary: #e9c46a;
+
   /* Spacing */
+  --space-2xs: 0.4rem;
   --space-xs: 0.8rem;
   --space-sm: 1.2rem;
   --space-md: 2.4rem;
   --space-lg: 3.6rem;
+
+  /* Font Sizes */
+  --font-xs: 0.8rem;
+  --font-sm: 1.2rem;
+  --font-reg: 1.6rem;
+  --font-med: 2.4rem;
+  --font-lg: 3.6rem;
+  --font-xl: 4.8rem;
+  --font-2xl: 6rem;
 }

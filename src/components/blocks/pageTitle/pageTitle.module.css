@@ -1,0 +1,13 @@
+.pageTitle {
+  padding: 24rem 0;
+
+  h1 {
+    font-size: var(--font-xl);
+    font-weight: 900;
+  }
+
+  p {
+    margin-bottom: var(--space-md);
+    color: var(--grey-300);
+  }
+}
