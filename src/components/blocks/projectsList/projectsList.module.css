@@ -1,0 +1,10 @@
+.projectsList {
+  display: grid;
+  gap: var(--space-md);
+}
+
+@media (min-width: 992px) {
+  .projectsList {
+    grid-template-columns: 1fr 1fr;
+  }
+}

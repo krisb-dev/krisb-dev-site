@@ -3,6 +3,7 @@ import { ProjectsListContent } from "./types";
 import { ArrowRight, Calendar1Icon } from "lucide-react";
 import { formatDate } from "@/lib/formatDate";
 
+
 interface PostsListBlockProps {
   block: {
     id: string;
@@ -40,6 +41,7 @@ const PostsListBlock = async ({ block }: PostsListBlockProps) => {
             </h2>
             <p className="mt-2">{block.summary}</p>
           </div>
+
           <Link
             href="/articles"
             className="flex items-center gap-1 text-gray-200 group"

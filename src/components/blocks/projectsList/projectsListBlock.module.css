@@ -1,0 +1,13 @@
+.projectsList {
+  padding: 8rem 0;
+
+  .projectsListHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-lg);
+
+    a {
+      margin-left: auto;
+    }
+  }
+}

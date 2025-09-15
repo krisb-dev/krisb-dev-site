@@ -30,9 +30,9 @@ const Header = () => {
         <nav>
           <ul>
             {navItems.map(({ href, label }) => (
-              <li>
+              <li key={href}>
                 <Link
-                  key={href}
+
                   href={href}
                   className={clsx(
                     style.navLink,
