@@ -1,0 +1,33 @@
+:root {
+  --postListItemBorderRadius: 0.8rem;
+}
+
+.postListItem {
+  padding: var(--space-lg);
+  background: var(--grey-800);
+  border: solid 1px var(--grey-700);
+  border-radius: var(--postListItemBorderRadius);
+
+  header {
+    display: flex;
+    align-items: center;
+
+    > div {
+      margin-right: auto;
+    }
+
+    .postListItemDate {
+      color: var(--grey-300);
+      font-size: var(--font-sm);
+    }
+
+    h3 {
+      margin-bottom: var(--space-sm);
+      font-size: var(--font-md);
+    }
+  }
+
+  footer {
+    margin-top: var(--space-md);
+  }
+}

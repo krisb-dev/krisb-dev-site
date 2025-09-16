@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import HeroBlock from "./heroBlock";
 // import { ContentBlock } from "./types";
 import ProjectsListBlock from "./projectsList/projectsListBlock";
-import PostsListBlock from "./postsListBlock";
+import PostsListBlock from "./postsList/postsListBlock";
 import { PageTitleBlock } from "./pageTitle/pageTitleBlock";
 import { WysiwygBlock } from "./wysiwygBlock";
 import { TechStackBlock } from "./techStackBlock";
